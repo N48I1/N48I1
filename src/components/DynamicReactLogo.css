@@ -1,0 +1,54 @@
+/* CSS for Dynamic React Logo */
+.react-logo-container .main {
+  /* Adjust size as needed, removing vh and using a fixed or relative size */
+  width: 100px; /* Example fixed size */
+  height: 100px; /* Example fixed size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: roll 15s linear 0.5s infinite;
+  margin: 20px auto; /* Center it if it's a block */
+}
+
+.react-logo-container .ellipse,
+.react-logo-container .ellipse2,
+.react-logo-container .ellipse3 {
+  position: absolute;
+  /* Adjust vw to fixed or relative units, e.g., pixels or em */
+  height: 60px; /* 12vw -> 60px if container is 500px wide, adjust as needed */
+  width: 20px;  /* 4vw -> 20px */
+  border-radius: 50%;
+  border: 3px solid #39FF14; /* 0.6vw -> 3px, using electric green */
+}
+
+.react-logo-container .ellipse {
+  transform: rotate(30deg);
+}
+
+.react-logo-container .ellipse2 {
+  transform: rotate(-30deg);
+}
+
+.react-logo-container .ellipse3 {
+  transform: rotate(90deg);
+}
+
+.react-logo-container .ball {
+  position: absolute;
+  /* Adjust vw to fixed or relative units */
+  width: 12.5px; /* 2.5vw -> 12.5px */
+  height: 12.5px; /* 2.5vw -> 12.5px */
+  border-radius: 50%;
+  background-color: #39FF14; /* Electric green */
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
