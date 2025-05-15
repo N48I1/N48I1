@@ -13,12 +13,12 @@ const SkillItem: React.FC<{ skill: string }> = ({ skill }) => {
   // Basic keyword to logo mapping (can be expanded)
   const logoMap: { [key: string]: string } = {
     react: "dynamic", // Special case for dynamic React logo
-    "elastic stack": "/images/logos/elasticsearch.png", // Remove since SVG is invalid
-    suricata: "/images/logos/suricata_logo.png", // Using actual png files
-    zeek: "/images/logos/zeek_logo.png", // Using actual png files
-    iota: "/images/logos/iota_logo.svg", // Added IOTA logo
-    python: "/images/logos/python.png", // Now using provided PNG
-    docker: "/images/logos/docker.png", // Now using provided PNG
+    "elastic stack": "/N48I1/images/logos/elasticsearch.png", // Remove since SVG is invalid
+    suricata: "/N48I1/images/logos/suricata_logo.png", // Using actual png files
+    zeek: "/N48I1/images/logos/zeek_logo.png", // Using actual png files
+    iota: "/N48I1/images/logos/iota_logo.svg", // Added IOTA logo
+    python: "/N48I1/images/logos/python.png", // Now using provided PNG
+    docker: "/N48I1/images/logos/docker.png", // Now using provided PNG
     // Add more mappings here as logos are acquired
   };
 

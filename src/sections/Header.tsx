@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <img 
-            src="/images/profile_picture.jpg" 
+            src="/N48I1/images/profile_picture.jpg" 
             alt="Nabil El Hilali" 
             className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-hacker-accent-secondary object-cover mb-4 md:mb-0 md:mr-4"
           />
