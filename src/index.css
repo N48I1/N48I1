@@ -6,32 +6,31 @@
 
 @layer base {
   :root {
-    /* Light mode colors */
-    --background: 0 0% 100%;         /* #FFFFFF */
-    --foreground: 222 47% 7%;        /* #0D1117 */
-    --card: 0 0% 98%;                /* #FAFAFA */
-    --card-foreground: 222 47% 7%;   /* #0D1117 */
-    --popover: 0 0% 98%;             /* #FAFAFA */
-    --popover-foreground: 222 47% 7%;/* #0D1117 */
-    --primary: 200 100% 50%;         /* #00A8FF Electric Blue */
-    --primary-foreground: 0 0% 100%; /* #FFFFFF */
-    --secondary: 109 100% 54%;       /* #39FF14 Neon Green */
-    --secondary-foreground: 222 47% 7%; /* #0D1117 */
-    --muted: 0 0% 90%;               /* #E5E5E5 */
-    --muted-foreground: 222 47% 40%; /* #4B5563 */
-    --accent: 285 100% 50%;          /* #BF00FF Vibrant Purple */
-    --accent-foreground: 0 0% 100%;  /* #FFFFFF */
-    --destructive: 0 84.2% 60.2%;    /* #EF4444 */
-    --destructive-foreground: 0 0% 98%; /* #FAFAFA */
-    --border: 0 0% 80%;              /* #CCCCCC */
-    --input: 0 0% 80%;               /* #CCCCCC */
-    --ring: 200 100% 50%;            /* #00A8FF */
+    /* Default to dark hacker theme for light mode as well, or define a light variant */
+    --background: 0 0% 7%; /* #0D1117 */
+    --foreground: 0 0% 88%; /* #E0E0E0 */
+    --card: 0 0% 11%; /* #161B22 */
+    --card-foreground: 0 0% 88%; /* #E0E0E0 */
+    --popover: 0 0% 11%; /* #161B22 */
+    --popover-foreground: 0 0% 88%; /* #E0E0E0 */
+    --primary: 109 100% 54%; /* #39FF14 Neon Green */
+    --primary-foreground: 0 0% 7%; /* #0D1117 */
+    --secondary: 200 100% 50%; /* #00A8FF Electric Blue */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    --muted: 0 0% 11%; /* #161B22 */
+    --muted-foreground: 0 0% 55%; /* #8B949E */
+    --accent: 285 100% 50%; /* #BF00FF Vibrant Purple */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+    --destructive: 0 84.2% 60.2%; /* Default destructive, can be themed */
+    --destructive-foreground: 0 0% 98%; /* Default destructive fg */
+    --border: 0 0% 20%; /* #30363D */
+    --input: 0 0% 20%; /* #30363D */
+    --ring: 109 100% 54%; /* #39FF14 Neon Green for focus rings */
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Keep your existing dark mode colors here */
-    --background: 222 47% 7%; /* #0D1117 */
+    --background: 222 47% 7%; /* #0D1117 - Adjusted HSL for dark blue/black */
     --foreground: 210 17% 89%; /* #E0E0E0 */
     --card: 222 39% 11%; /* #161B22 */
     --card-foreground: 210 17% 89%; /* #E0E0E0 */
@@ -45,11 +44,12 @@
     --muted-foreground: 215 14% 55%; /* #8B949E */
     --accent: 285 100% 50%; /* #BF00FF Vibrant Purple */
     --accent-foreground: 0 0% 100%; /* #FFFFFF */
-    --destructive: 0 72% 51%; /* #EF4444 */
+    --destructive: 0 72% 51%; /* A slightly more vibrant red for dark theme */
     --destructive-foreground: 0 0% 98%;
     --border: 217 19% 21%; /* #30363D */
     --input: 217 19% 21%; /* #30363D */
     --ring: 109 100% 54%; /* #39FF14 Neon Green */
+    /* --radius: 0.5rem; /* Already in :root */
   }
 }
 

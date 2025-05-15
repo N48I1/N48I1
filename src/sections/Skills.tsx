@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import DynamicReactLogo from "@/components/DynamicReactLogo"; // Import the dynamic React logo
 
 // Helper component to render logos alongside skill text
-const SkillItem: React.FC<{ skill: string; logos?: string[] }> = ({ skill, logos }) => {
+const SkillItem: React.FC<{ skill: string }> = ({ skill }) => {
   // Basic keyword to logo mapping (can be expanded)
   const logoMap: { [key: string]: string } = {
     react: "dynamic", // Special case for dynamic React logo
