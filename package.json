@@ -2,6 +2,10 @@
   "name": "react_repo",
   "private": true,
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/N48I1/N48I1"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
